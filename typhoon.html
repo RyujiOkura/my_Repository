@@ -1,0 +1,1363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>気象庁｜全国への接近数</title>
+<meta name="Author" content="気象庁 Japan Meteorological Agency" />
+<meta name="keywords" content="気象庁 Japan Meteorological Agency" />
+<meta name="description" content="台風の接近数（2018年までの確定値と2019年の速報値）" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" type="text/css" href="../../../../../com/css/define.css" media="all" />
+<script type="text/javascript" src="../../../../../com/js/jquery.js"></script>
+<style type="text/css" media="all"><!-- @import url(../../../../../com/default.css); --></style>
+</head>
+
+<body>
+<noscript><div>すべての機能をご利用いただくにはJavascriptを有効にしてください。</div></noscript>
+<!--header start -->
+<div id="header_area">
+	<div id="nheader">
+		<div id="logo"><a href="//www.jma.go.jp/jma/index.html"><img src="//www.jma.go.jp/jma/com/images/logo.gif" alt="気象庁" width="120" height="67" /></a></div>
+
+		<div id="header2_right">
+			<div id="header2_link">
+				<ul>
+					<li xml:lang="en" lang="en"><a href="//www.jma.go.jp/jma/indexe.html">ENGLISH</a></li>
+				</ul>
+			</div>
+			<!-- search -->　
+			<div id="gsearch">
+				<form id="cse-search-box" action="//google.com/cse">
+					<input type="hidden" name="cx" value="009950868052057056798:0yrbmp7chwi" />
+					<input type="hidden" name="ie" value="UTF-8" />
+					<input type="text" name="q" />
+					<input type="image" name="sa" src="//www.jma.go.jp/jma/com/images/btn_search6.png" alt="検索"/>
+				</form>
+				<script type="text/javascript" src="//www.google.com/cse/brand?form=cse-search-box&lang=ja"></script>
+			</div>
+			<!-- search end-->
+		</div>
+		<ul id="gnavi">
+			<li><a href="//www.jma.go.jp/">ホーム</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menuflash.html">防災情報</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menureport.html" class="on">各種データ・資料</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menuknowledge.html">知識・解説</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menuabout.html">気象庁について</a></li>
+			<li><a href="//www.jma.go.jp/jma/menu/menulinks.html">案内・申請</a></li>
+		</ul>
+	</div>
+</div>
+<!--header end -->
+
+<div id="contents_area2">
+<div id="ncontents2">
+<!-- pankuzu menu -->
+		<ul class="breadcrumb2">
+			<li><a href="//www.jma.go.jp/">ホーム</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="//www.jma.go.jp/jma/menu/menureport.html">各種データ・資料</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="../../index.html">過去の台風資料</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="../index.html">台風の統計資料</a>&nbsp;&gt;&nbsp;</li>
+			<li><a href="./index.html">台風の接近数</a>&nbsp;&gt;&nbsp;</li>
+			<li>全国への接近数</li>
+		</ul>
+<!-- //pankuzu menu -->
+
+<br />
+<br />
+<!-- submenu -->
+<div id="submenu">
+	<ul id="submenulist">
+		<li><a href="../generation/generation.html">台風の発生数</a></li>
+		<li><a href="../accession/index.html">台風の接近数</a></li>
+		<ul><li>全国</li></ul>
+		<li><a href="../landing/landing.html">台風の上陸数</a></li>
+		<li><a href="../average/average.html">台風の平年値</a></li>
+		<li><a href="../ranking/ranking.html">台風の順位</a></li>
+		<ul>
+			<li><a href="../ranking/generation.html">発生数</a></li>
+			<li><a href="../ranking/accession.html">接近数</a></li>
+			<li><a href="../ranking/landing.html">上陸数</a></li>
+			<li><a href="../ranking/late_early_g.html">発生日時</a></li>
+			<li><a href="../ranking/late_early_l.html">上陸日時</a></li>
+			<li><a href="../ranking/air_pressure.html">中心気圧が低い台風</a></li>
+			<li><a href="../ranking/longevity.html">長寿台風</a></li>
+		</ul>
+	</ul>
+</div>
+<!-- //submenu -->
+
+<!-- contents -->
+<div id="main">
+<h1>全国への接近数（2018年までの確定値と2019年の速報値）</h1>
+
+	<p class="mtx">
+	　台風の中心が国内のいずれかの<a href="./kanshotou.pdf">気象官署等</a>から300 km以内に入った場合を「<span style="font-weight: bold;">日本に接近した台風</span>」としています。
+	</p>
+	<ul class="mtx" style="margin: 10px; list-style-type: none;">
+	<li>（注）接近は2か月にまたがる場合があり、各月の接近数の合計と年間の接近数とは必ずしも一致しません。</li>
+	<li>（注）2019年の値は速報値であるため、後日変更になる場合があります。</li>
+	</ul>
+
+	<table class="data" summary="2019年の全国への台風の接近数">
+		<caption>2019年の台風の接近数（2019年11月14日現在）</caption>
+
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2019</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">5</td>
+			<td align="right">4</td>
+			<td align="right"> </td>
+			<td align="right" style="background-color:#999999;"> </td>
+<!--
+			<td align="right" style="background-color:#999999;"> </td>
+-->
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+	</table>
+
+	<table class="data" summary="2018年までの全国への台風の接近数">
+		<caption>2018年までの台風の接近数 <a href=./accession.csv download="accession.csv">(csvファイル)</a></caption>
+
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2018</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">7</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+<!--
+			<td align="right" style="background-color:#999999;"> </td>
+-->
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">16</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2017</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">4</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">8</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2016</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">5</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">11</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2015</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">4</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2014</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2013</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">6</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2012</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">6</td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">17</td>
+		<tr>
+			<td align="center" style="font-weight: bold;">2011</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2010</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">7</td>
+		<tr>
+			<td align="center" style="font-weight: bold;">2009</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">8</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2008</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2007</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2006</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2005</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2004</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">6</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">19</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2003</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2002</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">6</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2001</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">11</td>
+		</tr>
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">2000</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right">4</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">15</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1999</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">11</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1998</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">5</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">8</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1997</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">15</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1996</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1995</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">5</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1994</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">4</td>
+			<td align="right">6</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">15</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1993</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1992</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">5</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1991</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right">5</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1990</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">5</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1989</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">11</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1988</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right">4</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1987</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">5</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1986</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1985</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">7</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1984</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1983</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">7</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1982</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1981</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">11</td>
+		</tr>
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1980</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1979</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">7</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1978</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">6</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1977</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">6</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1976</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">5</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1975</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1974</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1973</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">4</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1972</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">11</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1971</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">5</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1970</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">9</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1969</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">8</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1968</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1967</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1966</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">7</td>
+			<td align="right">8</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">19</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1965</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">15</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1964</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">8</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1963</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1962</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">4</td>
+			<td align="right">6</td>
+			<td align="right">2</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">14</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1961</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">4</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">15</td>
+		</tr>
+		<tr>
+			<th scope="col" align="center">年</th>
+			<th scope="col" align="center">&nbsp;1月</th>
+			<th scope="col" align="center">&nbsp;2月</th>
+			<th scope="col" align="center">&nbsp;3月</th>
+			<th scope="col" align="center">&nbsp;4月</th>
+			<th scope="col" align="center">&nbsp;5月</th>
+			<th scope="col" align="center">&nbsp;6月</th>
+			<th scope="col" align="center">&nbsp;7月</th>
+			<th scope="col" align="center">&nbsp;8月</th>
+			<th scope="col" align="center">&nbsp;9月</th>
+			<th scope="col" align="center">10月</th>
+			<th scope="col" align="center">11月</th>
+			<th scope="col" align="center">12月</th>
+			<th scope="col" align="center">年間</th>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1960</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">11</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">19</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1959</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">13</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1958</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">4</td>
+			<td align="right">5</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">15</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1957</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right">3</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1956</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">6</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1955</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">7</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">4</td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">16</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1954</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1953</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">4</td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">10</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1952</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right">2</td>
+			<td align="right">2</td>
+			<td align="right">3</td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">12</td>
+		</tr>
+		<tr>
+			<td align="center" style="font-weight: bold;">1951</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">3</td>
+			<td align="right">1</td>
+			<td align="right">1</td>
+			<td align="right">2</td>
+			<td align="right"> </td>
+			<td align="right"> </td>
+			<td align="center" style="background-color:#ccff99; font-weight: bold;">8</td>
+		</tr>
+	</table>
+</div>
+
+<!-- //contents -->
+<p class="totop"><a href="#nheader">このページのトップへ</a></p>
+</div>
+</div>
+
+<div id="footer_area">
+	<div id="nfooter">
+		<p>気象庁：〒100-8122東京都千代田区大手町1-3-4  代表電話：03-3212-8341</p>
+		<ul>
+			<li><a href="//www.jma.go.jp/jma/kishou/info/coment.html">気象庁ホームページについて</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
+
